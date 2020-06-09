@@ -1,12 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .navbar {
-  background-size: cover;
+  background-image: url(/img/bg.jfif);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-brand h1 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 7px;
+  -webkit-transition: .33s;
+  transition: .33s;
+}
+
+.navbar-brand h1:hover {
+  font-size: 23px;
+  letter-spacing: 9px;
+}
+
+.navbar-brand h1:hover span {
+  color: goldenrod;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -28,5 +51,32 @@
 
 .navbar .navbar-nav .nav-link {
   margin-left: 20px;
+}
+
+.carousel-inner img {
+  opacity: .7;
+}
+
+.carousel-inner .carousel-caption {
+  color: black;
+  bottom: 30%;
+}
+
+.carousel-inner .carousel-caption h5 {
+  font-weight: normal;
+}
+
+.carousel-inner .carousel-caption .btn {
+  color: white;
+  background-color: goldenrod;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+.carousel-inner .carousel-caption .btn:focus, .carousel-inner .carousel-caption .btn:active {
+  color: white;
+  background-color: goldenrod;
 }
 /*# sourceMappingURL=main.css.map */

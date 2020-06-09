@@ -1,18 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
+// Navigation
 .navbar {
-    // background: url(/img/bg.jfif) no-repeat center center;
-    background-size: cover;
+
+    background-image: url(/img/bg.jfif);
+    align-items: center;
+
+    &-brand {
+
+        h1 {
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 20px;
+            letter-spacing: 7px;
+            transition: .33s; 
+
+            &:hover {
+                font-size: 23px;
+                letter-spacing: 9px;
+               
+                span {
+                    color: goldenrod;
+                }
+            }
+        }
+        
+    }
 
     .navbar-nav {
-        
-        .nav-item {
-
-        }
 
         .nav-link {
             color: black;
@@ -36,4 +58,47 @@
             margin-left: 20px;
         }
     }
+}
+
+// Carousel
+.carousel-inner {
+
+    img {
+        opacity: .7;
+        // height: 100vh;
+    }
+
+    .carousel-caption {
+
+        color: black;
+        bottom: 30%;
+
+
+        h5 {
+           font-weight: normal;
+        }
+    
+        p {
+    
+        }
+
+        .btn {
+
+            color: white;
+            background-color: goldenrod;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            font-size: 25px;
+
+            &:focus,
+            &:active 
+            {
+                color: white;
+                background-color: goldenrod;
+            }
+        }
+        
+    }
+
 }
