@@ -10,8 +10,7 @@
 // Navigation
 .navbar {
 
-    background-image: url(/img/bg.jfif);
-    align-items: center;
+    // background-image: url(/img/bg.jfif);
 
     &-brand {
 
@@ -20,6 +19,7 @@
             text-transform: uppercase;
             font-size: 20px;
             letter-spacing: 7px;
+            color: white;
             transition: .33s; 
 
             &:hover {
@@ -37,7 +37,7 @@
     .navbar-nav {
 
         .nav-link {
-            color: black;
+            color: white;
             font-size: 20px;
 
             transition: .3s ease-in;
@@ -60,45 +60,10 @@
     }
 }
 
-// Carousel
-.carousel-inner {
+// Jumbotron
 
-    img {
-        opacity: .7;
-        // height: 100vh;
-    }
+.jumbotron {
 
-    .carousel-caption {
-
-        color: black;
-        bottom: 30%;
-
-
-        h5 {
-           font-weight: normal;
-        }
-    
-        p {
-    
-        }
-
-        .btn {
-
-            color: white;
-            background-color: goldenrod;
-            border: none;
-            outline: none;
-            border-radius: 10px;
-            font-size: 25px;
-
-            &:focus,
-            &:active 
-            {
-                color: white;
-                background-color: goldenrod;
-            }
-        }
-        
-    }
-
+    background: url(/img/bg.jpg) no-repeat center center;
+    background-size: cover;
 }
